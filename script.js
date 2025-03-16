@@ -24,15 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
         menu.classList.toggle("active");
     }
 
-    // Close menu on scroll
+    
     window.addEventListener("scroll", () => {
         if (menu.classList.contains("active")) {
             menu.classList.remove("active");
         }
-        setActiveLink(); // Make sure active section updates correctly
+        setActiveLink(); 
     });
 
-    // Smooth scrolling and close menu when clicking a link
     navLinks.forEach(link => {
         link.addEventListener("click", function (e) {
             e.preventDefault();
@@ -45,11 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     block: "start"
                 });
 
-                // Ensure active class updates immediately
                 document.querySelectorAll("nav ul li").forEach(link => link.classList.remove("active"));
                 this.parentElement.classList.add("active");
 
-                // Close the menu on mobile
                 menu.classList.remove("active");
             }
         });
@@ -57,5 +54,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     menuToggle.addEventListener("click", toggleMenu);
     window.addEventListener("scroll", setActiveLink);
-    setActiveLink(); // Run on page load
+    setActiveLink(); 
 });
