@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Logo Styling */
+
 .club-logo {
     width: 40px;
     height: auto;
@@ -22,7 +22,6 @@ body {
 .home{
    color: white;
 }
-/* Navbar Styling */
 nav {
     height: 60px;
     padding: 10px 15px;
@@ -38,12 +37,10 @@ nav {
     transition: top 0.3s;
 }
 
-/* Hide Navbar on Scroll */
 .nav-hidden {
     top: -60px;
 }
 
-/* Menu Toggle for Mobile */
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -53,7 +50,6 @@ nav {
     cursor: pointer;
 }
 
-/* Navbar List */
 nav ul {
     display: flex;
     align-items: center;
@@ -98,7 +94,6 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
-/* Sections */
 section {
     text-align: center;
     padding: 50px 20px;
@@ -135,13 +130,11 @@ section {
     min-height: 70vh;
 }
 
-/* Contact Links */
 .contact a {
     text-decoration: none;
     color: blue;
 }
 
-/* Text & Heading Size */
 .home, .events, .contact, section {
     text-align: center;
     padding: 30px;
@@ -156,7 +149,6 @@ h2 {
     font-size: 24px;
 }
 
-/* Mobile Navbar */
 @media (max-width: 768px) {
     nav {
         padding: 15px;
